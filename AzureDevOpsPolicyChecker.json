@@ -1,0 +1,38 @@
+[
+    {
+        "RuleType": "NuGet",
+        "Item": "SecurityCodeScan",
+        "Version": "3\\.[0-9]?\\.[0-9]?",
+        "StatusCode": "FailBuild"
+    },
+       {
+        "RuleType": "NuGet",
+        "Item": "Microsoft.CodeQuality.Analyzers",
+        "Version": "[2-9]*\\.[0-9]?\\.[0-9]?",
+        "StatusCode": "FailBuild"
+    },
+       {
+        "RuleType": "NuGet",
+        "Item": "Swashbuckle.AspNetCore",
+        "Version": "[5-9]*\\.[0-9]?\\.[0-9]?",
+        "StatusCode": "Ignore"
+    },
+       {
+        "RuleType": "NuGet",
+        "Item": "Swashbuckle.AspNetCore.Swagger",
+        "Version": "[5-9]?\\.[0-9]?\\.[0-9]?",
+        "StatusCode": "Ignore"
+    },
+       {
+        "RuleType": "DotNet",
+        "Item": "netcoreapp3.1",
+        "Version": "",
+        "StatusCode": "Warning"
+    },
+       {
+        "RuleType": "DotNet",
+        "Item": "netcoreapp2.1, netcoreapp2.0",
+        "Version": "",
+        "StatusCode": "FailBuild"
+    }
+]
